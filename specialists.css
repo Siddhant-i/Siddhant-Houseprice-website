@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  padding: 40px 20px;
+  color: #2c3e50;
+}
+
+.specialists-section {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #1a237e;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 18px;
+  margin: 0 auto 30px auto;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.specialist-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.specialist-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.specialist-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.specialist-role {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d47a1;
+  margin-bottom: 6px;
+}
+
+.specialist-skill {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.specialist-description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}

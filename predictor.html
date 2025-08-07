@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House Price Predictor</title>
+  <link rel="stylesheet" href="predictor.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🏡 House Price Predictor</h1>
+    <form id="predictForm">
+      <label for="area">Area (sq ft):</label>
+      <input type="number" id="area" name="area" required />
+
+      <label for="location">Location:</label>
+      <select id="location" name="location" required>
+        <option value="">Select Location</option>
+        <option value="VIP">VIP</option>
+        <option value="Minal Residency">Minal Residency</option>
+        <option value="Katara Extension">Katara Extension</option>
+        <option value="Ayodhya Nagar">Ayodhya Nagar</option>
+        <option value="Indrapuri">Indrapuri</option>
+        <option value="Bairagarh">Bairagarh</option>
+        <option value="Kolar">Kolar</option>
+        <option value="Karond">Karond</option>
+        <option value="MP Nagar">MP Nagar</option>
+        <option value="Ashoka Gardan">Ashoka Gardan</option>
+        <option value="Bagh dil khusha">Bagh dil khusha</option>
+               
+
+        
+
+        
+      </select>
+
+      <label for="bedrooms">Bedrooms:</label>
+      <input type="number" id="bedrooms" name="bedrooms" required />
+
+      <label for="age">Age of House (years):</label>
+      <input type="number" id="age" name="age" required />
+
+      <button type="submit">Predict Price</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="predictor.js"></script>
+</body>
+</html>

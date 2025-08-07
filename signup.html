@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houseprice prediction System - Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Create Account</h2>
+           <!-- if something wrong happens then in foam method="POST" -->
+            <form action="login.html">
+                <div class="textbox">
+                    <input type="text" placeholder="Full Name" name="fullname" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

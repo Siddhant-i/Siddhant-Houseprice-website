@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="suggestions.css">
+</head>
+<body>
+                       <!-- Suggestion Button -->
+<button class="open-dialog-btn" onclick="openDialog()">💡 Suggest an Idea</button>
+
+<!-- Modal Dialog -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <span class="close-btn" onclick="closeDialog()">&times;</span>
+    <h2>Logical Suggestion Box</h2>
+    <form id="suggestionForm">
+      <input type="text" placeholder="Your Name" id="name" required />
+      <input type="email" placeholder="Your Email" id="email" required />
+      <textarea placeholder="Your Idea..." id="message" required></textarea>
+      <button type="submit">Submit</button>
+      <p id="responseMsg"></p>
+    </form>
+  </div>
+</div>
+
+
+<section class="guide-section">
+    <h1>🧠 How to Use the Logical Thinking Suggestion Box</h1>
+    <p class="intro-text">We value your creative ideas! Follow the simple steps below to share your insights with us and help improve the House Price Prediction experience for everyone.</p>
+    
+    <div class="steps-container">
+      <div class="step-card">
+        <span class="step-number">1</span>
+        <h3>Click the Button</h3>
+        <p>On the homepage, click the "💡 Suggest an Idea" button to open the dialog box.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">2</span>
+        <h3>Enter Your Details</h3>
+        <p>Fill in your name, email, and write your idea or suggestion clearly.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">3</span>
+        <h3>Submit Your Idea</h3>
+        <p>Press the “Submit” button. You'll see a confirmation message.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-number">4</span>
+        <h3>Done! 🎉</h3>
+        <p>Your suggestion is now on its way to our team. Thank you for contributing!</p>
+      </div>
+    </div>
+
+    <div class="note">
+      💬 <strong>Note:</strong> All suggestions are reviewed by our team. We may contact you for more details if needed.
+    </div>
+  </section>
+
+<script src="suggestions.js"></script>
+
+</body>
+</html>
